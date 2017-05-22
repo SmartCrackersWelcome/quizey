@@ -1,7 +1,11 @@
 package com.servlet3;
 
+import javax.servlet.Filter;
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import com.config.ApplicationFilter;
+import com.config.BaseFilter;
 import com.config.SpringMongoConfig1;
 import com.config.SpringWebConfig;
 
@@ -21,6 +25,11 @@ public class MyWebInitializer extends
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		return new Class<?>[] {ApplicationConfig.class, SpringMongoConfig1.class};
+	}
+	
+	@Override
+	protected Filter[] getServletFilters() {
+		return new Filter[]{new BaseFilter(),new ApplicationFilter()};
 	}
 
 }
