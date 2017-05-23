@@ -6,6 +6,10 @@ import org.springframework.data.domain.Sort;
 
 import com.models.Employee;
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 public interface EmployeeService {
 
 	public Employee saveEmployee(Employee employee);

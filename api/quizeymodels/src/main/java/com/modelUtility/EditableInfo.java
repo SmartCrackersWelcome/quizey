@@ -2,6 +2,10 @@ package com.modelUtility;
 
 import java.util.Calendar;
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 public class EditableInfo {
 
 	private long createdAt;

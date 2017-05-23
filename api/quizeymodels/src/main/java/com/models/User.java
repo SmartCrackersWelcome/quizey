@@ -6,8 +6,11 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.modelUtility.EditableInfo;
-import com.modelUtility.FacebookModel;
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 @Document(collection = "users")
 public class User implements Serializable {
 	
@@ -27,8 +30,6 @@ public class User implements Serializable {
 	private String email;
 	
 	private Boolean isActive;
-	
-	private FacebookModel facebookModel;
 	
 	private EditableInfo editableInfo;
 
@@ -70,14 +71,6 @@ public class User implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-	
-	public FacebookModel getFacebookModel() {
-		return facebookModel;
-	}
-
-	public void setFacebookModel(FacebookModel facebookModel) {
-		this.facebookModel = facebookModel;
 	}
 
 	public EditableInfo getEditableInfo() {

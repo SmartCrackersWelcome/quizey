@@ -9,6 +9,11 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 import com.mongodb.MongoClient;
 
+/**
+ * This the MongoDb configuration 
+ * @author RITESH SINGH
+ *
+ */
 @Configuration
 @EnableMongoRepositories(mongoTemplateRef = "mongoTemplate" ,basePackages = "com.repositories")
 public class SpringMongoConfig1 {
@@ -24,7 +29,5 @@ public class SpringMongoConfig1 {
 		MongoTemplate mongoTemplate = new MongoTemplate(mongoDbFactory());
 				
 		return mongoTemplate;
-		
 	}
-
 }

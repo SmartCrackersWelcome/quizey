@@ -16,6 +16,10 @@ import org.springframework.stereotype.Repository;
 import com.models.Employee;
 import com.models.User;
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 @Repository("userRepository")
 public class UserRepositoryImpl implements UserRepository {
 

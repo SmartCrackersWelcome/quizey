@@ -10,6 +10,10 @@ import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 @Configuration
 @ComponentScan(basePackageClasses = Application.class)
 class ApplicationConfig {

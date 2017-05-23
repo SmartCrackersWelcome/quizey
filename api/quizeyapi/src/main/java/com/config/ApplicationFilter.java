@@ -12,6 +12,11 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
+/**
+ * This Filter is not developed yet for use
+ * @author RITESH SINGH
+ *
+ */
 @WebFilter("/cool/*")
 public class ApplicationFilter implements Filter{
 	

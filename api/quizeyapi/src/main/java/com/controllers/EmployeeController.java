@@ -25,6 +25,10 @@ import com.models.Employee;
 import com.services.EmployeeService;
 
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 @Controller("employeeController")
 @ComponentScan("com.services")
 @RequestMapping("employee")
@@ -87,7 +91,7 @@ public class EmployeeController {
 		
 		Response responseData = new Response();
 		responseData.setData(employees);
-		responseData.setStatus("200");
+		responseData.setStatus(200);
 
 		return new Gson().toJson(responseData);
 	}
@@ -120,7 +124,7 @@ public class EmployeeController {
 		Employee employee = employeeService.getEmployeeById(employeeId);
 		Response responseData = new Response();
 		responseData.setData(employee);
-		responseData.setStatus("200");
+		responseData.setStatus(200);
 
 		return new Gson().toJson(responseData);
 	}

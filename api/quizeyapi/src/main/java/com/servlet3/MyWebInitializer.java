@@ -9,6 +9,10 @@ import com.config.BaseFilter;
 import com.config.SpringMongoConfig1;
 import com.config.SpringWebConfig;
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 public class MyWebInitializer extends
 		AbstractAnnotationConfigDispatcherServletInitializer {
 

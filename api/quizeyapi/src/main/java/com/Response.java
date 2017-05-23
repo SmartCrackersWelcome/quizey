@@ -1,15 +1,19 @@
 package com;
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 public class Response {
 
-	private String status;
+	private int status;
 	private String statusDescription;
 	private Object data;
 	
-	public String getStatus() {
+	public int getStatus() {
 		return status;
 	}
-	public void setStatus(String status) {
+	public void setStatus(int status) {
 		this.status = status;
 	}
 	public Object getData() {
@@ -24,5 +28,4 @@ public class Response {
 	public void setStatusDescription(String statusDescription) {
 		this.statusDescription = statusDescription;
 	}
-	
 }

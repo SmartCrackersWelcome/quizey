@@ -7,6 +7,10 @@ import org.springframework.data.domain.Sort;
 import com.models.User;
 
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 public interface UserService {
 
 	public User saveUser(User user);

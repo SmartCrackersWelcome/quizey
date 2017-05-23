@@ -12,6 +12,10 @@ import com.models.Employee;
 
 import com.repositories.EmployeeRepository;
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 @Service("employeeService")
 @ComponentScan("com.repositories")
 public class EmployeeServiceImpl implements EmployeeService {

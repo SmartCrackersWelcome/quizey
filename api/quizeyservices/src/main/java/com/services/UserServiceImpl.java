@@ -13,6 +13,10 @@ import com.models.User;
 
 import com.repositories.UserRepository;
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 @Service("userService")
 @ComponentScan("com.repositories")
 public class UserServiceImpl implements UserService {

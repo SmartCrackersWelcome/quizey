@@ -24,6 +24,10 @@ import com.models.User;
 
 import com.services.UserService;
 
+/**
+ * @author RITESH SINGH
+ *
+ */
 @Controller("userController")
 @ComponentScan("com.services")
 @RequestMapping("user")
@@ -40,14 +44,14 @@ public class UserController {
 			throws UnknownHostException {
 		Response responseData = new Response();
 		responseData.setData(user);
-		responseData.setStatus("200");
+		responseData.setStatus(200);
 		responseData.setStatusDescription("success");
 		try{
 			if(user != null)
 				userService.saveUser(user);
 		}catch(Exception ee){
 			System.out.println("Error while saving user!");
-			responseData.setStatus("500");
+			responseData.setStatus(500);
 			responseData.setStatusDescription("Internal Server Error");
 		}
 		return new Gson().toJson(responseData);
@@ -64,12 +68,12 @@ public class UserController {
 		try{
 			users = userService.getUsers();
 			responseData.setData(users);
-			responseData.setStatus("200");
+			responseData.setStatus(200);
 			responseData.setStatusDescription("success");
 		}catch(Exception ee){
 			System.out.println("Error while fetching users!");
 			responseData.setData(null);
-			responseData.setStatus("500");
+			responseData.setStatus(500);
 			responseData.setStatusDescription("Internal Server Error");
 		}
 		
@@ -87,11 +91,11 @@ public class UserController {
 		try{
 			user = userService.getUserByUserName(userName);
 			responseData.setData(user);
-			responseData.setStatus("200");
+			responseData.setStatus(200);
 		}catch(Exception ee){
 			System.out.println("Error while fetching user by username!");
 			responseData.setData(null);
-			responseData.setStatus("500");
+			responseData.setStatus(500);
 			responseData.setStatusDescription("Internal Server Error");
 		}
 		
